@@ -1,10 +1,14 @@
 <?php
 namespace App\Controller;
 
+use App\View\View;
+
 class NotfoundController
 {
     public function index()
     {
-        return 'Página não encontrada';
+        $view = new View('site/notfound.phtml');
+
+        return $view->render();
     }
 }
