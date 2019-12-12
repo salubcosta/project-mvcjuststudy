@@ -27,4 +27,4 @@ if(isset($url[2])){
     unset($url[1]);
     $params = array_values($url);
 }
-print $controller->index($params);
+print $controller->$action($params);
